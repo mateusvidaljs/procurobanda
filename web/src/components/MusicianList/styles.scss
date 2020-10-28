@@ -1,0 +1,75 @@
+article {
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+  padding: 1.4rem;
+  border-bottom: 1px solid var(--color-line);
+  width: 100%;
+  margin: 1rem 0;
+}
+
+article > img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+article div.musician-data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.6rem;
+}
+
+article div.musician-data span.name {
+  font: 600 2rem Quicksand;
+  color: #008B45;
+}
+
+article div.musician-data .location {
+  font: 500 1.3rem Quicksand;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+article div.musician-data .location span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article div.musician-data .location span img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+article div.musician-data .genres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article div.musician-data .genres img {
+  height: 3rem;
+}
+
+article div.musician-data .genres img + img {
+  margin-left: 3rem;
+}
+
+article div.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 2;
+}
+
+article div.buttons button {
+  padding: 1rem;
+  background: #577590;
+  color: #fff;
+  border: 0;
+  border-radius: 0.8rem;
+}

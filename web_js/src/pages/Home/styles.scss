@@ -1,0 +1,215 @@
+//======= Declaração de Variáveis =========
+
+$mainColor: #1874CD;
+$secondaryColor: #fff;
+$thirdColor: #E8E8E8;
+$redFavorite: #EE3B3B;
+
+//======= Inicio do Código =========
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+//=========== Barra do topo ===========//
+
+.container .top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding: 0 50px 0 50px;
+  background-color: $secondaryColor;
+  margin: 0 auto;
+}
+
+.container .top-bar .top-bar-logo {
+  font-size: 22px;
+}
+
+.container .top-bar .top-bar-logo span {
+  color: $mainColor;
+  font-weight: 500;
+}
+
+.container .top-bar .selection-top-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .top-bar .menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $mainColor;
+  border-bottom: 3px solid $mainColor;
+  margin: 0 20px 0 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container .top-bar .menu-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .top-bar .menu-user .menu-button {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.container .top-bar .menu-user .user-button {
+  color: $mainColor;
+  border: 2px solid $mainColor;
+  padding: 7px;
+  border-radius: 30px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.container .top-bar .menu-item.active {
+  background-color: $thirdColor;
+}
+
+.container .top-bar .menu-item img {
+  width: 40px;
+}
+
+//======================================
+
+//========= Barra de filtros =========== 
+
+.container .filter-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 1px solid $mainColor;
+}
+
+.container .filter-bar select {
+  background-color: transparent;
+  padding: 10px;
+  margin: 12px;
+  border-radius: 8px;
+}
+
+.container .filter-bar button {
+  background-color: transparent;
+  border: 1px solid $mainColor;
+  border-radius: 8px;
+  color: $mainColor;
+  width: 100px;
+  height: 34px;
+}
+
+.container .musician-list {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+//===================== MUSICIAN LIST 2 =====================
+.container .musician-list .musician-item {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondaryColor;
+  border-radius: 8px;
+  margin: 30px;
+  width: 220px;
+  text-align: center;
+}
+
+.container .musician-list .musician-item .buttons {
+  margin: 20px 0 20px 0;
+}
+
+.container .musician-list .musician-item .buttons .see-profile {
+  background: $mainColor;
+  color: $secondaryColor;
+  border: none;
+  padding: 10px;
+  width: 90%;
+  border-radius: 8px;
+}
+
+.container .musician-list .musician-item .buttons .see-profile:hover {
+  -webkit-animation: action 1s 1  alternate;
+  animation: action 1s 1  alternate;
+}
+
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes action {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.container .musician-list .musician-item .buttons .favorite {
+  background: $secondaryColor;
+  color: $redFavorite;
+  border: none;
+  width: 30%;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.container .musician-list .musician-item .div-avatar img {
+  width: 100%;
+  margin: 0 auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.container .musician-list .musician-item .basic-data {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+}
+
+.container .musician-list .musician-item .basic-data .name {
+  font-weight: 500;
+  font-size: 18px;
+  color: $mainColor;
+}
+
+.container .musician-list .musician-item .basic-data .age {
+  font-size: 13px;
+}
+
+.container .musician-list .musician-item .musician-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .musician-list .musician-item .musician-data .role {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container .musician-list .musician-item .musician-data .role img {
+  width: 27px;
+  margin-right: 10px;
+}
+
+.container .musician-list .musician-item .musician-data .genres img {
+  width: 30px;
+  margin: 10px;
+}

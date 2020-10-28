@@ -1,0 +1,89 @@
+#page-bandmaker {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-bandmaker > header {
+  display: flex;
+  flex-direction: column;
+  background: #363636;
+  color: #F0F0F7;
+  font-weight: 700;
+}
+#page-bandmaker > header .top-bar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text-background);
+  padding: 1.6rem 0;
+}
+
+#page-bandmaker > header .top-bar-container .top-bar-container-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#page-bandmaker > header .top-bar-container .top-bar-container-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  background: transparent;
+  color: #F0F0F7;
+  border-radius: 50%;
+  padding: 1rem;
+
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+#page-bandmaker > header .top-bar-container .top-bar-container-buttons button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+#page-bandmaker > header .top-bar-container .top-bar-container-buttons button + button {
+  margin-left: 2rem;
+}
+
+#page-bandmaker > main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page-bandmaker main .search-type {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#page-bandmaker main .search-type div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background: #00CD66;
+  font-weight: 600;
+  width: 50%;
+}
+
+#page-bandmaker main .search-type div.active {
+  background: #008B45;
+}
+
+#page-bandmaker main .search-type div + div {
+  border-left: 1px solid #363636;
+}
+
+#page-bandmaker main .search-type img {
+  height: 3rem;
+  margin-right: 1rem;
+}

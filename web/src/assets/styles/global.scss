@@ -1,0 +1,73 @@
+/*
+  #FFF #F0F0F7 #E8E8E8 #363636 #1C1C1C
+
+  #5e60ce #6930c3 #8C72A0 #6E4B89 #532B72 #3C135C #290445
+  
+  #00CD66 #008B45
+  
+  #EE3B3B #CD3333
+
+  spartan
+  comfortaa
+*/
+
+:root {
+  font-size: 60%;
+  --color-white: #FFF;
+  --color-background: #F0F0F7;
+  --color-background-dark: #E8E8E8;
+  --color-text-base: #9C9C9C;
+  --color-grey: #363636;
+  --color-grey-dark: #1C1C1C;
+  --color-link: #6930c3;
+
+  --color-primary: #8C72A0;
+  --color-primary-dark: #6E4B89;
+  --color-secondary: #532B72;
+  --color-secondary-dark: #3C135C;
+  --color-dark: #290445;
+
+  --color-button: #00CD66;
+  --color-button-dark: #008B45;
+
+  --color-button-danger: #EE3B3B;
+  --color-button-danger-dark: #CD3333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--color-background);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  color: var(--color-text);
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
